@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <i class="ri-book-3-line"></i> BookStore
+            </a>
+
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active_link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#featured" class="nav_link">
+                            <i class="ri-book-3-line"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#discount" class="nav_link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Discount</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#new" class="nav_link">
+                            <i class="ri-bookmark-line"></i>
+                            <span>New Books</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#testimonial" class="nav_link">
+                            <i class="ri-message-3-line"></i>
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_actions">
+                <i class="ri-search-line searchButton" id="search_button"></i>
+
+                <i class="ri-user-line loginButton" id="login_button"></i>
+
+                <i class="ri-moon-line change_theme" id="theme_button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search" id="search_content">
+        <form action="" class="search_form">
+            <i class="ri-search-line search_icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search_input">
+        </form>
+
+        <i class="ri-close-line search_close" id="searchClose"></i>
+    </div>
+
+    <div class="login grid" id="login_content">
+        <form action="" class="login_form grid">
+            <h3 class="login_title">Log In</h3>
+
+            <div class="login_group grid">
+                <div>
+                    <label for="loginEmail" class="login_label">Email</label>
+                    <input type="email" placeholder="Write your email" id="" class="login_input">
+                </div>
+
+                <div>
+                    <label for="loginPassword" class="login_label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="" class="login_input">
+                </div>
+
+                <div>
+                    <span class="signup">
+                        You do not have an account? <a href="#">Sign up</a>
+                    </span>
+
+                    <a href="#" class="login_forgot">
+                        You forgot your password
+                    </a>
+
+                    <button type="submit" href="#" class="login_button button">Log In</button>
+                </div>
+            </div>
+        </form>
+
+        <i class="ri-close-line login_close" id="loginClose"></i>
+    </div>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <h1 class="home_title">
+                        Browse & <br>
+                        Select Books
+                    </h1>
+
+                    <p class="home_description">
+                        Find the best books books from your favourite authors, explore hundreds of books with all possible categories, take advantage of the 50% discount and much more!
+                    </p>
+
+                    <a href="#featured" class="button" id="explore_button">Explore Now</a>
+                </div>
+
+                <div class="home_images">
+                    <div class="home_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home_article swiper-slide">
+                                <img src="Images/the-murder-of-roger-ackroyd.jpg" alt="image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="Images/The adventures of Tom Sawyer.png" alt="image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="Images/Harry Potter and the Philosopher's Stone.png" alt="image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="home_img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section">
+            <div class="services_container container grid">
+                <arcticle class="services_card">
+                    <i class="ri-truck-line"></i>
+                    <h3 class="services title">Free Shipping</h3>
+                    <p class="services_description">Order more than Rs. 500</p>
+                </arcticle>
+
+                <arcticle class="services_card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="services title">Secure Payment</h3>
+                    <p class="services_description">100% Secure Payment</p>
+                </arcticle>
+
+                <arcticle class="services_card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="services title">24/7 support</h3>
+                    <p class="services_description">Call us anytime</p>
+                </arcticle>
+            </div>
+        </section>
+
+        <section class="featured section" id="featured">
+            <h2 class="section_title">
+                Featured Books
+            </h2>
+
+            <div class="featured_container container">
+                <div class="featured_swiper swiper" id="featured_button">
+                    <div class="swiper-wrapper">
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/richdad.jpg" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="addCart button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/murder on the orient express.png" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/adventures in wonderland.png" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/romeo and juliet.png" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/a christmans carol.jpg" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/the pickwick papers.jpg" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/richdad.jpg" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/tintin.png" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/famous five2.png" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured_card swiper-slide">
+                            <img src="Images/pietr.png" alt="image" class="featured_img">
+                            <h2 class="featured_title">Featured Book</h2>
+                            <div class="featured_prices">
+                                <span class="featured_discount">Rs. 250</span>
+                                <span class="featured_price">Rs. 499</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured_actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discount section" id="discount">
+            <div class="discount_container container grid">
+                <div class="discount_data">
+                    <h2 class="discount_title section_title">
+                        Upto 50% Discount!
+                    </h2>
+
+                    <p class="discount_description">
+                        Take advantage of the discount days we have for you. Buy book from your favourite authors. The more you buy, the more discounts we have for you!
+                    </p>
+
+                    <a href="#featured" class="button">Shop Now</a>
+                </div>
+
+                <div class="discount_images">
+                    <img src="Images/a christmans carol.jpg" alt="image" class="discount_img1">
+                    <img src="Images/richdad.jpg" alt="image" class="discount_img2">
+                </div>
+            </div>
+        </section>
+
+        <section class="new section" id="new">
+            <h2 class="section_title">New Books</h2>
+
+            <div class="new_container container">
+                <div class="new_swiper swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="new_card swiper-slide">
+                            <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+
+                            <div>
+                                <h2 class="new_title">New Book</h2>
+                                <div class="new_prices">
+                                    <span class="new_discount">Rs. 379</span>
+                                    <span class="new_price">Rs. 699</span>
+                                </div>
+
+                                <div class="new_stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="new_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="new_card swiper-slide">
+                                <img src="Images/Prideandprejudice.png" alt="image" class="new_img">
+    
+                                <div>
+                                    <h2 class="new_title">New Book</h2>
+                                    <div class="new_prices">
+                                        <span class="new_discount">Rs. 379</span>
+                                        <span class="new_price">Rs. 699</span>
+                                    </div>
+    
+                                    <div class="new_stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join section">
+            <div class="join_container">
+                <img src="Images/join-bg.jpg" alt="image" class="join_img">
+
+                <div class="join_data container grid">
+                    <h2 class="join_title section_title">
+                        Susbscribe to receive <br>
+                        the Latest Updates!
+                    </h2>
+
+                    <form action="" class="join_form">
+                        <input type="email" placeholder="Enter email" class="join_input">
+                        <button type="submit" class="join_button button" id="join-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section" id="testimonial">
+            <h2 class="section_title">Customer Reviews <i class="ri-message-2-line"></i></h2>
+
+            <div class="testimonial_container container">
+                <div class="testimonial_swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="testimonial_card swiper-slide">
+                            <img src="Images/johndoe1.jpg" alt="image" class="testimonial_img">
+                            <h2 class="testimonial_title">John Doe</h2>
+                            <p class="testimonial_description">
+                                The best wesbite to buy quality books! The purchase is very easy to make and prices are very reasonable with great discounts.
+                            </p>
+
+                            <div class="testimonial_stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial_card swiper-slide">
+                            <img src="Images/daisyluiz.jpg" alt="image" class="testimonial_img">
+                            <h2 class="testimonial_title">Daisy Luiz</h2>
+                            <p class="testimonial_description">
+                                The best wesbite to buy quality books! The purchase is very easy to make and prices are very reasonable with great discounts.
+                            </p>
+
+                            <div class="testimonial_stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial_card swiper-slide">
+                            <img src="Images/user.jpg" alt="image" class="testimonial_img">
+                            <h2 class="testimonial_title">Anonymous</h2>
+                            <p class="testimonial_description">
+                                The best wesbite to buy quality books! The purchase is very easy to make and prices are very reasonable with great discounts.
+                            </p>
+
+                            <div class="testimonial_stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial_card swiper-slide">
+                            <img src="Images/Jack.jpg" alt="image" class="testimonial_img">
+                            <h2 class="testimonial_title">Jack</h2>
+                            <p class="testimonial_description">
+                                The best wesbite to buy quality books! The purchase is very easy to make and prices are very reasonable with great discounts.
+                            </p>
+
+                            <div class="testimonial_stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <div>
+                <a href="#" class="footer_logo">
+                    <i class="ri-book-3-line"></i> BookStore
+                </a>
+
+                <p class="footer_description">
+                    Find and explore the best <br>
+                    books from your <br>
+                    favourite authors.
+                </p>
+            </div>
+
+            <div class="footer_data grid">
+                <div>
+                    <h3 class="footer_title">About</h3>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">FAOs</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer_link">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer_link">Terms of services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer_title">Company</h3>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">Blogs</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer_link">Community</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer_link">Our Team</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer_link">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer_title">Contact</h3>
+
+                    <ul class="footer_links">
+                        <li>
+                            <address class="footer_info">
+                                Connaught Place H Block <br>
+                                New Delhi, Delhi 110001
+                            </address>
+                        </li>
+
+                        <li>
+                            <address class="footer_info">
+                                book.store@gmail.com <br>
+                                +91-1234567890
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer_title">Social</h3>
+
+                    <div class="footer_social">
+                        <a href="https://www.instagram.com/_sarthakdev_/" target="_blank" class="footer_social_link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sarthak-dev-020109221/" target="_blank" class="footer_social_link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+
+                        <a href="https://github.com/sarthakdev18" target="_blank" class="footer_social_link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll_up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+    <script src="scrollreveal.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

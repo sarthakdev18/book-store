@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "name": "Rich Dad Poor Dad",
+        "price": 250,
+        "image": "Images/richdad.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "a christmas carol",
+        "price": 200,
+        "image": "Images/a christmas carol.jpg"
+    },
+
+    {
+        "id": 3,
+        "name": "murder on the orient express",
+        "price": 250,
+        "image": "Images/murder on the orient express.png"
+    },
+
+    {
+        "id": 4,
+        "name": "romeo and juliet",
+        "price": 250,
+        "image": "Images/romeo and juliet.png"
+    },
+
+    {
+        "id": 5,
+        "name": "adventures in wonderland",
+        "price": 250,
+        "image": "Images/adventures in wonderland.png"
+    },
+
+    {
+        "id": 6,
+        "name": "the pickwick papers",
+        "price": 250,
+        "image": "Images/the pickwick papers.jpg"
+    },
+
+    {
+        "id": 7,
+        "name": "tintin",
+        "price": 250,
+        "image": "Images/tintin.png"
+    },
+
+    {
+        "id": 8,
+        "name": "famous five",
+        "price": 250,
+        "image": "Images/famous five2.png"
+    },
+
+    {
+        "id": 9,
+        "name": "pietr",
+        "price": 250,
+        "image": "Images/pietr.png"
+    },
+
+    {
+        "id": 10,
+        "name": "Pride and prejudice",
+        "price": 250,
+        "image": "Images/Prideandprejudice.png"
+    }
+]
